@@ -12,6 +12,7 @@ import BlogPage from './routes/blogPage/blog-page.route';
 import SignIn from './components/authentication/sign-in.component';
 import SignUp from './components/authentication/sign-up.component';
 import AboutRoute from './routes/about/about.route.jsx';
+import ResourcesRoute from './routes/resources/resources.route.jsx';
 
 const App = () => {
   const location = useLocation();
@@ -35,6 +36,7 @@ const App = () => {
         <Route path='signin' element={<SignIn />} />
         <Route path='signup' element={<SignUp />} />
         <Route path='about' element={<AboutRoute />} />
+        <Route path='resources' element={<ResourcesRoute />} />
       </Route>
     </Routes>
   );

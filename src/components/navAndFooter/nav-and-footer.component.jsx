@@ -26,6 +26,10 @@ const Navagation = () => {
     const redirectToSignIn = () => {
         navigate('/signin');
     }
+
+    const redirectToResources = () => {
+        navigate('/resources');
+    }
     
     return (
         <Fragment>
@@ -59,6 +63,10 @@ const Navagation = () => {
                             </button>
                             <button class="font-medium text-gray-400  md:py-6 hover:text-gray-500" onClick={redirectToTeam}>
                                 Team
+                            </button>
+                            <button class="font-medium text-gray-400  md:py-6 hover:text-gray-500" onClick={redirectToResources}>
+
+                                Resources
                             </button>
                             <button class="flex items-center gap-x-2 font-medium text-gray-400 hover:text-green-700 md:border-s md:border-gray-300 md:my-6 md:ps-6 hover:text-green-500" onClick={redirectToSignIn}>
                                 <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
