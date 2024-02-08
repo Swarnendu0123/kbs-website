@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { database } from "./FirebaseConfig";
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { ToastContainer, toast } from "react-toastify";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 
 const SignIn = () => {
     const [email, setEmail] = useState("");
@@ -26,6 +26,7 @@ const SignIn = () => {
                 draggable: true,
                 progress: undefined,
                 theme: "dark",
+                transition: Bounce,
             });
         } catch (err) {
             console.log(err.message);
@@ -38,6 +39,7 @@ const SignIn = () => {
                 draggable: true,
                 progress: undefined,
                 theme: "dark",
+                transition: Bounce,
             });
         }
     }
@@ -58,7 +60,6 @@ const SignIn = () => {
                     draggable
                     pauseOnHover
                     theme="dark"
-                    transition="Bounce"
                 />
                 <main className="w-full max-w-md mx-auto p-6">
                     <div className="mt-7  border  rounded-xl shadow-sm bg-gray-800 border-gray-700">

@@ -40,6 +40,7 @@ const SignUp = () => {
                     draggable: true,
                     progress: undefined,
                     theme: "dark",
+                    transition: Bounce,
                 });
                 return;
             }
