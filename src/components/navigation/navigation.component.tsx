@@ -8,11 +8,11 @@ import { signOut, useSession } from "next-auth/react";
 const Navigation: React.FC = () => {
     const [userEmail, setUserEmail] = useState<string | null>(null);
     const router = useRouter();
-const {data, status} = useSession();
+    const { data, status } = useSession();
     const handleSignOut = async () => {
-        signOut();
+        await signOut();
     }
-   
+
     return (
         <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0">
             <nav className="mt-6 relative max-w-[85rem] w-full bg-gray-800 border border-gray-700 bg-opacity-80 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto" aria-label="Global">

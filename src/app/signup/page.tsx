@@ -15,7 +15,7 @@ const SignUp = () => {
 
     const handleSignUp = async () => {
         // e.preventDefault();
-       signIn("credentials", {
+        await signIn("credentials", {
             email,
             password,
             redirect: false,
@@ -47,10 +47,10 @@ const SignUp = () => {
                                 <h1 className="block text-2xl font-bold text-white">Sign up</h1>
                                 <p className="mt-2 text-sm text-gray-400">
                                     Already have an account?
-                                    <Link href={"signin"}>  
-                                    <div className="text-green-600 decoration-2 hover:underline font-medium focus:outline-none focus:ring-1 focus:ring-gray-600" >
-                                        Sign in here
-                                    </div>
+                                    <Link href={"signin"}>
+                                        <div className="text-green-600 decoration-2 hover:underline font-medium focus:outline-none focus:ring-1 focus:ring-gray-600" >
+                                            Sign in here
+                                        </div>
                                     </Link>
                                 </p>
                             </div>
